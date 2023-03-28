@@ -11,8 +11,8 @@
 # **DC Residential Properties**
 <hr>
 
-Link Colab: https://colab.research.google.com/drive/1GfBgh3BuFiDDJ5k1kLw1Iofshsf_trFU
-Link Tableu: https://public.tableau.com/app/profile/alpha.pwdk/viz/TableuDCProperties/DashboardDCResidential 
+Link Colab: https://colab.research.google.com/drive/1GfBgh3BuFiDDJ5k1kLw1Iofshsf_trFU <br>
+Link Tableu: https://public.tableau.com/app/profile/alpha.pwdk/viz/TableuDCProperties/DashboardDCResidential <br>
 Link download ipynb: https://drive.google.com/drive/folders/1ZYBtm7hUT7WIDebW0iXiPDW4-Jk_k4aM?usp=share_link
 
 # **Contents**
@@ -279,6 +279,7 @@ harga rumah lainnya. Kemudian kita juga bisa mempertimbangkan income / penghasil
 5. **Lakukan update dataset modelling secara berkala** adakalanya ketika trend/jaman yang berubah, suatu model tidak memberikan hasil yang valid kembali. Oleh karena itu perlu dilakukan update dataset modelling sehingga model yang dikembangkan dapat mengikuti perkembangan trend/jaman.
 6. Tekait kebijakan Qualified dan Unqualified perlu dikaji kembali relevansinya, disarankan menggunakan segementasi ataupun teknik clustering, karena sudah dijabarkan pada saat proses data cleaning, bahwa kolom QUALIFIED pada data properti menunjukkan apakah harga properti tersebut sesuai dengan harga pasar yang wajar, berdasarkan penilaian dari pemerintah. Jika data unqualified digunakan dalam pemodelan, maka hasil analisis tidak akurat dan tidak sesuai dengan tujuan analisis, yaitu untuk memprediksi harga sesuai dengan nilai pasar yang wajar. Hal ini dapat menyebabkan kemungkinan adanya underpricing atau overpricing.
 
-8. Data Visualization
+**8. Data Visualization**
+ <br>
 ![Dashboard DC Residential](https://user-images.githubusercontent.com/118766459/228267870-080016bb-0029-4962-a0a2-6be9385aca05.png)
 
