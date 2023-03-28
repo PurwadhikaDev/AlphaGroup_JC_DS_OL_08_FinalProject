@@ -67,6 +67,8 @@ Untuk mengatasi permasalahan di atas, tujuan dari analisa yang dilakukan adalah 
 Pada Final Project ini, kita sebagai Data Science akan melakukan analisis data untuk menemukan pola dari fitur-fitur residential dari dataset DC Properties. Akan dilakukan pembuatan, evaluasi, dan implementasi model machine learning regresi sebagai tool yang dapat digunakan untuk memprediksi harga properti residential. Model machine learning ini selanjutnya akan dilakukan deployment menggunakan Flask, html dan python pada suatu website untuk memprediksi harga perumahan atau residential di Washington DC. 
 
 Adapun keseluruhan proses analisa yang dilakukan digambarkan pada gambar di bawah ini
+![M (1)](https://user-images.githubusercontent.com/116096399/228269057-81b7beab-1c38-4435-9b30-21efb7372582.png)
+
 
 > Role & Interest to ML:
 
@@ -76,12 +78,14 @@ Adapun keseluruhan proses analisa yang dilakukan digambarkan pada gambar di bawa
 * Customers: Menggunakan model machine learning untuk mendapatkan estimasi harga property yang akan dibeli, sesuai dengan preferensi pengguna.
 * Shareholders (perusahaan property): Menggunakan product model machine learning untuk menentukan harga jual beli property.
 
-Di atas adala goals akhir dari pembuatan machine learning ini, yaitu agar model ini dapat digunakan oleh share holders, baik melalui mobile maupun desktop.
+Di atas adalah goals akhir dari pembuatan machine learning ini, yaitu agar model ini dapat digunakan oleh share holders, baik melalui mobile maupun desktop.
+![download](https://user-images.githubusercontent.com/116096399/228269209-32e7909e-d4e6-4688-ac21-200292e66c2e.png)
 
 ## **1.4 Design Thinking**
 Apa saja proses yang perlu kita lakukan dalam pengerjaan final project ini dengan menggunakan design thinking?
 
 Berikut adalah proses Design Thinking Mapping untuk pembuatan machine learning regresi yang digunakan untuk memprediksi harga rumah atau residential di Washington DC
+![download](https://user-images.githubusercontent.com/116096399/228269256-8818378c-e957-4629-b4c0-098efbf3706b.png)
 
 ## **1.5 Matrix Evaluation**
 
@@ -111,6 +115,74 @@ Secara umum, pemahaman data digunakan untuk memeriksa data dengan tujuan mengena
 <p>
 
 Setiap baris dalam dataset mencakup informasi properti yang aktual di Washington, D.C. yang dikumpulkan pada bulan Juli 2018.
+
+Attribute Information:
+| Attribute | Data Type | Description | Variable Type  |
+| --- | --- | --- | --- |
+| Unnamed: 0 | Int | Index | - |
+| BATHRM | Int | Jumlah kamar mandi | Quant. Diskrit |
+| HF_BATHRM | Int | Jumlah kamar mandi tanpa *bathtub* atau *shower* | Quant. Diskrit |
+| HEAT | Object | Tipe pemanas ruangan | Qual. (Nominal) |
+| AC | Object | Pendingin ruangan, Y - Ada, N - Tidak ada | Qual. (Nominal) |
+| NUM_UNITS | Float | Jumlah unit | Quant. Diskrit |
+| ROOMS | Int | Jumlah ruangan | Quant. Diskrit |  
+| BEDRM | Int | Jumlah kamar tidur | Quant. Diskrit|
+| AYB | Float | Tahun properti dibangun | Quant. Kontinu |
+| YR_RMDL | Float | Tahun properti direnovasi yang mengubah struktur | Quant. Kontinu |
+| EYB | Int | Tahun properti direnovasi tanpa mengubah struktur| Quant. Kontinu | 
+| STORIES | Float | Jumlah lantai | Quant. Diskrit |
+| SALEDATE | Object | Tanggal penjualan terbaru | Quant. Kontinu |  
+| PRICE | Float | Harga penjualan terbaru | Quant. Kontinu |
+| SALE_NUM | Int | Jumlah penjualan sejak tahun 2014 | Quant. Diskrit |
+| GBA | Float | Luas total area bangunan dalam squarefeet | Quant. Kontinu |
+| BLDG_NUM | Int | Jumlah bangunan dalam properti | Quant. Diskrit |
+| STYLE | Object | Style properti | Qual. (Nominal) |
+| STRUCT | Object | Struktur bangunan | Qual. (Nominal) |
+| GRADE | Object | Kualitas properti | Qual. (Ordinal) |
+| CNDTN | Object | Kondisi properti | Qual. (Ordinal) |
+| EXTWALL | Object | Jenis dinding eksterior | Qual. (Nominal) |
+| ROOF | Object | Jenis atap rumah | Qual. (Nominal) |  
+| INTWALL | Object | Jenis dinding interior | Qual. (Nominal) |
+| KITCHENS | Float | Jumlah dapur | Quant. Diskrit |
+| FIREPLACES | Int | Jumlah perapian | Quant. Diskrit |
+| USECODE | Int | Kode penggunaan properti | Qual. (Nominal) | 
+| LANDAREA | Int | Luas tanah properti dalam square feet | Quant. Kontinu |
+| GIS_LAST_MOD_DTTM | Object | Tanggal data diperbaharui | Quant. Kontinu |  
+| CMPLX_NUM | Float | Nomor komplek | Qual. (Nominal) |
+| LIVING_GBA | Float | Luas area tempat tinggal dalam square feet | Quant. Kontinu |
+| FULLADDRESS | Object | Alamat jalan | Qual. (Nominal) |
+| CITY | Object | Kota | Qual. (Nominal) |
+| STATE | Object | Negara bagian | Qual. (Nominal) |
+| ZIPCODE | Float | Kode pos | Qual. (Nominal) |
+| NATIONALGRID | Object | Informasi terkait power station terdekat | Qual. (Nominal) | 
+| LATITUDE | Float | Latitude lokasi properti | Qual. (Nominal) |
+| LONGITUDE | Float | Longitude lokasi properti | Qual. (Nominal) |  
+| ASSESSMENT_NBHD | Object | ID lingkungan | Qual. (Nominal) |
+| ASSESSMENT_SUBNBHD | Object | ID sub lingkungan | Qual. (Nominal) |
+| CENSUS_TRACT | Float | Region sensus | Qual. (Nominal) |
+| CENSUS_BLOCK | Object | Blok pengambilan sensus | Qual. (Nominal) |
+| WARD | Object | Distrik | Qual. (Nominal) |
+| SQUARE | Object | Square (SSL - (Square, Suffix, Lot)) | Qual. (Nominal) |
+| X | Float | Longitude lokasi properti | Qual. (Nominal) |
+| Y | Float | Latitude lokasi properti | Qual. (Nominal) |
+| QUADRANT | Object | Kuadran kota (NE,SE,SW,NW) | Qual. (Nominal) |
+
+Property Overview:
+| No | House Features    |                                     | Construction Details |                             |
+|----|-------------------|-------------------------------------|----------------------|-----------------------------|
+|    | Based on:         | Consist of:                         | Based on:            | Consist of:                 |
+| 1  | Interior Details  | -        Bedrooms                   | Property             | -        Story              |
+|    |                   | -        Bathrooms                  |                      | -        Style              |
+|    |                   | -        Half Bathrooms             |                      |                             |
+| 2  | Heating           | -        Forced Air                 | Wall Type            | -        Exterior           |
+|    |                   | -        Electric Based             |                      | -        Interior           |
+|    |                   | -        etc                        |                      |                             |
+| 3  | Cooling           | -          Air Conditioner          | Roof Type            | -        Slate              |
+|    |                   |                                     |                      | -          Concrete         |
+| 4  | Interior Features | -        Kitchens                   | Condition            | -        Property Condition |
+|    |                   | -        Fireplaces                 |                      | -        Property Grade     |
+| 5  | Other Features    | -        Gross Building Area        | Notable Dates        | -        Year Built         |
+|    |                   | -        Living Gross Building Area |                      | -        Year Remodel       |
 
 #**3. Data Preprocessing**
 
