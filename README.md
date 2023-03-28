@@ -12,6 +12,8 @@
 <hr>
 
 Link Colab: https://colab.research.google.com/drive/1GfBgh3BuFiDDJ5k1kLw1Iofshsf_trFU
+Link Tableu: https://public.tableau.com/app/profile/alpha.pwdk/viz/TableuDCProperties/DashboardDCResidential 
+Link download ipynb: https://drive.google.com/drive/folders/1ZYBtm7hUT7WIDebW0iXiPDW4-Jk_k4aM?usp=share_link
 
 # **Contents**
 <hr>
@@ -23,7 +25,7 @@ Link Colab: https://colab.research.google.com/drive/1GfBgh3BuFiDDJ5k1kLw1Iofshsf
 5. Analytical Approach (Modelling)
 6. Deployment
 7. Conclusion and Recommendation
-8. Data Visualization in Tableau
+8. Data Visualization
 
 #**1. Business Problem Understanding**
 <hr>
@@ -138,6 +140,11 @@ Dalam kasus ini, kita akan coba menerapkan **multiple linear regression**
 Deployment Machine Learning adalah proses membuat model machine learning yang telah dilatih (trained) dapat digunakan dalam aplikasi yang dapat diakses oleh pengguna akhir secara online.
 
 Deployment machine learning memiliki peran penting dalam pemanfaatan model machine learning secara optimal dalam berbagai aplikasi yang dapat mempermudah dan mempercepat pengambilan keputusan untuk pembelian dan penjualan properti.
+![Screenshot 2023-03-28 at 19 58 07](https://user-images.githubusercontent.com/118766459/228267573-c39f8e54-8ea5-43d9-8a46-577f054228d8.png)
+![Screenshot 2023-03-28 at 19 59 13](https://user-images.githubusercontent.com/118766459/228267597-9c9750d0-4098-4542-a2e2-de6b38107f3c.png)
+![Screenshot 2023-03-28 at 19 59 21](https://user-images.githubusercontent.com/118766459/228267611-2e25132b-ad36-4567-84b5-cb3954aa71c3.png)
+
+
 
 #**7. Conclusion and Recommendation**
 ###**7.1 Conclusion**
@@ -272,5 +279,6 @@ harga rumah lainnya. Kemudian kita juga bisa mempertimbangkan income / penghasil
 5. **Lakukan update dataset modelling secara berkala** adakalanya ketika trend/jaman yang berubah, suatu model tidak memberikan hasil yang valid kembali. Oleh karena itu perlu dilakukan update dataset modelling sehingga model yang dikembangkan dapat mengikuti perkembangan trend/jaman.
 6. Tekait kebijakan Qualified dan Unqualified perlu dikaji kembali relevansinya, disarankan menggunakan segementasi ataupun teknik clustering, karena sudah dijabarkan pada saat proses data cleaning, bahwa kolom QUALIFIED pada data properti menunjukkan apakah harga properti tersebut sesuai dengan harga pasar yang wajar, berdasarkan penilaian dari pemerintah. Jika data unqualified digunakan dalam pemodelan, maka hasil analisis tidak akurat dan tidak sesuai dengan tujuan analisis, yaitu untuk memprediksi harga sesuai dengan nilai pasar yang wajar. Hal ini dapat menyebabkan kemungkinan adanya underpricing atau overpricing.
 
-#**8. Data Visualization in Tableau**
-Link: https://public.tableau.com/app/profile/alpha.pwdk/viz/TableuDCProperties/DashboardDCResidential 
+8. Data Visualization
+![Dashboard DC Residential](https://user-images.githubusercontent.com/118766459/228267870-080016bb-0029-4962-a0a2-6be9385aca05.png)
+
