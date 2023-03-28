@@ -1,5 +1,5 @@
 # AlphaGroup_JC_DS_OL_08_FinalProject
-#**Final Project by Alpha Team**
+**Final Project by Alpha Team**
 <hr>   
 
 **Alan Dodi Amdani**
