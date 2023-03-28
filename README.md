@@ -11,9 +11,9 @@
 # **DC Residential Properties**
 <hr>
 
-Link Colab: https://colab.research.google.com/drive/1GfBgh3BuFiDDJ5k1kLw1Iofshsf_trFU <br>
+Link Colab: https://colab.research.google.com/drive/1duJVt91P6MUn2U0MFyl36bTqi-JTWBkM?usp=sharing <br>
 Link Tableu: https://public.tableau.com/app/profile/alpha.pwdk/viz/TableuDCProperties/DashboardDCResidential <br>
-Link download ipynb: https://drive.google.com/drive/folders/1ZYBtm7hUT7WIDebW0iXiPDW4-Jk_k4aM?usp=share_link
+Link download material: https://drive.google.com/drive/folders/1ZYBtm7hUT7WIDebW0iXiPDW4-Jk_k4aM?usp=share_link
 
 # **Contents**
 <hr>
@@ -215,6 +215,8 @@ Deployment machine learning memiliki peran penting dalam pemanfaatan model machi
 ![Screenshot 2023-03-28 at 19 58 07](https://user-images.githubusercontent.com/118766459/228267573-c39f8e54-8ea5-43d9-8a46-577f054228d8.png)
 ![Screenshot 2023-03-28 at 19 59 13](https://user-images.githubusercontent.com/118766459/228267597-9c9750d0-4098-4542-a2e2-de6b38107f3c.png)
 ![Screenshot 2023-03-28 at 19 59 21](https://user-images.githubusercontent.com/118766459/228267611-2e25132b-ad36-4567-84b5-cb3954aa71c3.png)
+<br>
+Link video penggunaan aplikasi dapat diakses melalui https://drive.google.com/drive/folders/1ZYBtm7hUT7WIDebW0iXiPDW4-Jk_k4aM?usp=share_link
 
 
 
