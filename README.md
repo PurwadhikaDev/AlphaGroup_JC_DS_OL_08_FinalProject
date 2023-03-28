@@ -1,0 +1,44 @@
+# AlphaGroup_JC_DS_OL_08_FinalProject
+
+1. Menambahkan sumber data agar model memiliki lebih banyak informasi untuk dipelajari, yaitu dengan menambahkan data teraktual untuk perumahan atau residential yang ada di washington DC.
+2. Menambahkan fitur seperti jarak ke sekolah, transportasi umum, pusat perbelanjaan bisa dilakukan sebagai salah satu cara untuk menentukan apakah properti tersebut terletak di lokasi yang strategis atau tidak. Dengan cara ini, dapat memberikan penjelasan tambahan mengenai lokasi properti dan seberapa dekat properti tersebut dengan fasilitas-fasilitas yang penting dalam kehidupan sehari-hari.
+3. Dalam pengumpulan dataset, diharapkan genap hingga 1 tahun sehingga profil penjualan setiap tahunnya dan setiap bulannya dapat dibandingkan secara apple to apple karena jumlah data yang sama.
+4. Untuk meningkatkan akurasi model prediksi, salah satu cara yang dapat dilakukan adalah dengan menambahkan lebih banyak data, terutama pada kisaran harga di antara 2 juta USD - 6 juta USD. Dengan cara ini, model akan memiliki lebih banyak data untuk dipelajari dan dapat menghasilkan prediksi yang lebih akurat pada properti dengan harga yang lebih tinggi.
+5. Sudah sangat wajar semakin tinggi harga suatu rumah, kepemilikan unit perumahan dengan harga tinggi tentunya semakin sedikit jumlahnya. Oleh karena itu perlu dipertimbangkan untuk mulai membagi dan mengelompokan perumahan mana saja rumah yang tergolong mewah dengan rumah yang biasa di Washington DC. Hal ini sangat membantu terhadap performa model yang akan dibuat karena distribusi data harga yang ada akan lebih normal.
+6. Untuk memastikan kualitas data, penting untuk memeriksa dan menghindari kesalahan input data pada saat pengumpulan dataset. Kesalahan input seperti kesalahan dalam tahun, nomor atau fitur lainnya dapat mempengaruhi kualitas data dan menghasilkan kesimpulan atau prediksi yang tidak akurat. Oleh karena itu, diperlukan proses verifikasi data secara hati-hati dan sistematis untuk memastikan integritas dan konsistensi data. Selain itu juga bisa ditambahkan dictionary atau drop down untuk setiap option value pada fitur terkait, agar tidak terjadi kesalahan input
+
+<br>
+
+**Rekomendasi untuk Model**
+
+<br>
+
+1. Di masa depan, model ini memerlukan dukungan dari model klasifikasi yang dapat menentukan apakah harga penjualan/pembelian rumah tersebut "menguntungkan atau tidak" berdasarkan harga rumah yang telah terjual/dibeli sebagai variabel target. Selain itu, penerapan model unsupervised juga bisa digunakan seperti K-means clustering (model ini digunakan untuk mengelompokkan data ke dalam kelas yang berbeda, dengan meminimalkan jarak antara setiap data dengan pusat kelompok) atau Principal Component Analysis / PCA (model ini digunakan untuk mengekstraksi fitur penting dari data, dengan mengurangi dimensi data ke fitur-fitur yang paling signifikan dan menghilangkan fitur yang tidak relevan).
+2. Mengingat distribusi data dari rumah rumah yang umum dan rumah mewah bisa dipastikan akan berbeda secara signifikan. Ada pilihan untuk membuat model terpisah untuk rumah mewah atau memfokuskan pada penjualan rumah biasa untuk kebutuhan sehari-hari, karena keberadaan data rumah mewah dapat memberikan dampak besar pada model.
+3. Karena adanya kelompok data condominium dalam dataset, di masa depan bisa dibuat sebuah model untuk properti Condominium yang dapat digunakan untuk melengkapi prediksi harga semua jenis properti di Washington DC.
+4. Model ini tentu masih dapat diimporvisasi agar dapat menghasilkan prediksi yang lebih baik lagi. Namun, kita dapat melakukan A/B testing terhadap model yang sudah dibuat pada project ini untuk mengetahui tingkat efektifitas penggunaan model.
+
+5. Mengecek prediksi mana saja yang memiliki nilai error yang tinggi. Kita dapat mengelompokkan error tersebut ke dalam grup overestimation dan underestimation, lalu memilih 5% error paling ekstrim saja untuk tiap grup. Nantinya pengelompokkan akan menjadi 3 grup, yaitu overestimation (5%), underestimation (5%), dan grup mayoritas yang error-nya mendekati nilai mean (90%). Setelahnya kita bisa mengecek hubungan antara error tersebut dengan tiap variabel independen. Pada akhirnya kita dapat mengetahui sebenarnya variabel mana saja dan aspek apa yang menyebabkan model menghasilkan error yang tinggi, sehingga kita bisa melakukan training ulang dengan penerapan feature engineering lainnya.
+
+6. Pergunakan Grid Search, karena biasanya Grid Search juga dapat memeliki dampak pada performa secara lebih baik. Namun tentu ada trade off-nya, yaitu computational cost-nya, berarti membutuhkan device dengan spesifikasi yang baik.
+
+7. Ada sebuah topik menarik, yaitu terkait House Price Bubble, terjadi ketika suatu harga properti naik secara signifikan dan kemudian harganya melambung turun drastis. Hal seperti ini bisa terjadi ketika harga properti terus naik tinggi sementara kapabilitas orang untuk membeli properti menurun (demand turun), atau mereka tidak ada kekuatan membeli (purchasing power). Di samping itu, ada sebuah pernyataan dari **Roberts, Lawrence (2008)**,
+agar pasar otomatis bisa menyadari adanya price bubble
+disarankan perubahan cara penilaian yang sudah ada yang 
+menggunakan teknik sales comparison approach menjadi teknik income 
+approach. Perubahan cara penilaian ini disebut oleh Roberts (2008) 
+dengan sebutan market solution. Sales comparison approach didasarkan 
+pada harga bangunan yang dianggap relative sama pada transaksi jual 
+beli terakhir sehingga kenaikan harga suatu rumah memicu kenaikan 
+harga rumah lainnya. Kemudian kita juga bisa mempertimbangkan income / penghasilan rata rata pada tiap daerah. Meskipun secara keuntungan berbisnis hal ini perlu diteliti lebih lanjut.
+
+####**7.4.2 Rekomendasi Terhadap Bisnis**
+1. Dengan adanya machine learning, maka proses riset terhadap harga tentu menjadi lebih cepat, maka kita bisa bekerja sama dengan aplikasi jual beli rumah. Misalnya dengan memberikan rekomendasi harga pada pemilik rumah yang ingin menjual unit-nya. Contoh proses bisnisnya secara singkat, seller input data rumah/ spesifikasi rumah, kemudian aplikasi akan memunculkan rekomendasi harga jual. Sehingga seller pun tidak bingung dalam menentukan harga, tidak terlalu mahal dan tidak terlalu murah. Ke depan bisa dievaluasi, apakah dengan menerapkan model / rekomendasi tersebut traffic penjualannya semakin bagus? apakah akan lebih cepat terjual? Jika iya, berarti model tersebut berguna bagi bisnis. Maka hubungan antara Model Developer dan Aplikasi Jual Beli Properti bisa menjadi saling menguntungkan (misalnya dalam bentuk sharing profit)
+2. **Mulai dari Kasus Penggunaan yang Sederhana** Bisnis sebaiknya memulai dengan kasus penggunaan yang sederhana dan kemudian memperluas penggunaan teknologi machine learning sesuai dengan kebutuhan bisnis. Hal ini akan membantu dalam memahami cara kerja teknologi machine learning dan meminimalkan risiko kesalahan dalam penggunaan teknologi tersebut. Seperti yang kita ketahui bersama kesalahan kesalahan yang terjadi bisa memnyebabkan tambahan cost pada perusahaan.
+3. **Libatkan Tim Ahli** Jika bisnis tidak memiliki tim ahli dalam machine learning, maka sebaiknya bisnis melibatkan tim ahli untuk membantu dalam penggunaan teknologi machine learning. Tim ahli dapat membantu bisnis dalam memilih algoritma regresi yang tepat, mempersiapkan data, dan melatih model regresi atau model model machine learning lainnya.
+4. **Lakukan pengontrolan atau pengendalian** yang meliputi pengujian dan evaluasi sistem, implementasi, dan pengelolaan sistem yang dihasilkan. Dalam tahap ini, perusahaan perlu melakukan uji coba terhadap sistem machine learning yang telah dibangun dan melakukan evaluasi terhadap kinerja sistem tersebut. Perusahaan juga perlu melakukan pemeliharaan dan pengelolaan sistem secara berkala untuk memastikan sistem dapat berjalan dengan baik.
+5. **Lakukan update dataset modelling secara berkala** adakalanya ketika trend/jaman yang berubah, suatu model tidak memberikan hasil yang valid kembali. Oleh karena itu perlu dilakukan update dataset modelling sehingga model yang dikembangkan dapat mengikuti perkembangan trend/jaman.
+6. Tekait kebijakan Qualified dan Unqualified perlu dikaji kembali relevansinya, disarankan menggunakan segementasi ataupun teknik clustering, karena sudah dijabarkan pada saat proses data cleaning, bahwa kolom QUALIFIED pada data properti menunjukkan apakah harga properti tersebut sesuai dengan harga pasar yang wajar, berdasarkan penilaian dari pemerintah. Jika data unqualified digunakan dalam pemodelan, maka hasil analisis tidak akurat dan tidak sesuai dengan tujuan analisis, yaitu untuk memprediksi harga sesuai dengan nilai pasar yang wajar. Hal ini dapat menyebabkan kemungkinan adanya underpricing atau overpricing.
+
+#**8. Data Visualization in Tableau**
+Link: https://public.tableau.com/app/profile/alpha.pwdk/viz/TableuDCProperties/DashboardDCResidential 
