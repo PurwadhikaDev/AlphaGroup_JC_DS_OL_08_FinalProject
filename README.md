@@ -290,7 +290,7 @@ Dari sisi Penjual, akan bermanfaat dalam menentukan harga terbaik, supaya tidak 
 2. Meningkatkan Daya Saing Bisnis: Dengan memanfaatkan machine learning price prediction, bisnis property dapat menjadi lebih kompetitif dalam pasar yang semakin sengit. Hal ini karena bisnis property dapat menawarkan harga yang lebih tepat, penawaran yang lebih personal dan relevan, serta meningkatkan efisiensi operasi bisnis.
 3. Pengambilan Keputusan yang Lebih Baik: Dengan memiliki prediksi harga yang akurat, bisnis property dapat membuat keputusan yang lebih baik dalam menentukan harga jual, menilai nilai investasi, dan melakukan investasi yang lebih cerdas. Hal ini dapat membantu bisnis property untuk mengoptimalkan keuntungan dan mengurangi risiko kehilangan investasi.
 
-###**7.3 Limitasi**
+**7.3 Limitasi**
 1. Karena adanya penghapusan terhadap outlier, maka akan ada limit pada batas maksimal harga dan size yang dimasukan, untuk harga maximal yang bisa dimasukan adalah 5685000.0 USD, sedangkan size minimal yang bisa dimasukan adalah 58304
 
 2. Pada fitur ageBuilding tidak dinamis / perlu diupdate kembali setiap ada pertambahan tahun. 
